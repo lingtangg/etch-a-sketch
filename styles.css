@@ -1,0 +1,8 @@
+.grids,
+.grids-hover {
+    min-height: 20px;
+}
+
+.grids-hover {
+    background-color: black;
+}

@@ -12,14 +12,16 @@ function makeGrid() {
             const rows = document.getElementsByClassName('rows')[y-1];
             const div = document.createElement('div');
             div.classList.add('grids');
-            div.innerText = 'x';
             div.style.flexGrow = '1';
             rows.appendChild(div);
+            div.addEventListener("mouseover", () => { // hover state
+                div.classList.remove("grids");
+                div.classList.add("grids-hover");
+            })
         }
     }
 }
 
-// Hover state
 
 
 window.onload = function() {
